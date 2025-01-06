@@ -1,0 +1,199 @@
+layout:
+  qmk_keyboard: corne_rotated
+  layout_name: LAYOUT_split_3x5_3
+# FILL IN below field with a value like {qmk_keyboard: ferris/sweep}
+# or {ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2}}
+# see https://github.com/caksoylar/keymap-drawer/blob/main/KEYMAP_SPEC.md#layout
+#layout:
+layers:
+  BONE2:
+  - J
+  - D
+  - U
+  - A
+  - X
+  - P
+  - H
+  - L
+  - M
+  - W
+  - C
+  - {t: T, h: LCTL}
+  - {t: I, h: LALT}
+  - {t: E, h: LGUI}
+  - O
+  - B
+  - {t: N, h: RGUI}
+  - {t: R, h: RALT}
+  - {t: S, h: RCTL}
+  - G
+  - F
+  - V
+  - 'Ü'
+  - 'Ä'
+  - 'Ö'
+  - Z
+  - Y
+  - 'ß'
+  - Q
+  - K
+  - {t: TAB, h: NUM}
+  - {t: SPACE, h: NAV}
+  - LSHIFT
+  - RSHIFT
+  - {t: ENTER, h: SYS}
+  - {t: ESCAPE, h: FUNC}
+  NAV:
+  - ''
+  - '&msc MOVE_LEFT'
+  - '&msc MOVE_DOWN'
+  - '&msc MOVE_UP'
+  - '&msc MOVE_RIGHT'
+  - ''
+  - PAGE UP
+  - UP ARROW
+  - PAGE DOWN
+  - VOLUME UP
+  - '&mkp MB5'
+  - '&mkp MB3'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MB3'
+  - ''
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT
+  - MUTE
+  - Gui+Sft+ 4
+  - Gui+ X
+  - Gui+ C
+  - Gui+ V
+  - AC DESKTOP SHOW ALL WINDOWS
+  - ''
+  - PREVIOUS
+  - PLAY PAUSE
+  - NEXT
+  - VOL DN
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  SYS:
+  - '\'
+  - '¢'
+  - '~'
+  - '%'
+  - '&'
+  - '`'
+  - '^'
+  - ';'
+  - ':'
+  - '$'
+  - '/'
+  - '('
+  - ')'
+  - '['
+  - ']'
+  - '"'
+  - '-'
+  - ','
+  - .
+  - '#'
+  - '|'
+  - '<'
+  - '>'
+  - '{'
+  - '}'
+  - "'"
+  - '_'
+  - '!'
+  - '?'
+  - '€'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  FUNC:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - EP ON
+  - {t: BT, h: '2'}
+  - OUT USB
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+ HOME
+  - ''
+  - EP OFF
+  - {t: BT, h: '1'}
+  - OUT BLE
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - EP TOG
+  - {t: BT, h: '0'}
+  - BT CLR
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  NUM:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - '+'
+  - '-'
+  - '*'
+  - '/'
+  - '='
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '≠'
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [21, 22]
+  k: DEL
+- p: [27, 28]
+  k: BACKSPACE
+
