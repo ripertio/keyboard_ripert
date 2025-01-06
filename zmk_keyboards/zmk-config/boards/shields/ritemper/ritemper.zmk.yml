@@ -1,14 +1,13 @@
 file_format: "1"
-id: temper
-name: Chocofi Temper
+id: Ritempert
+name: Chocofi Temper with Trackpad
 type: shield
 url: https://github.com/raeedcho/chocofi-temper
 requires: [pro_micro]
-exposes: [i2c_oled]
+exposes: [i2c_glidepoint]
 features:
   - keys
-  - display
-  - underglow
+  - trackpad
 siblings:
-  - temper_left
-  - temper_right
+  - ritemper_left
+  - ritemper_right
