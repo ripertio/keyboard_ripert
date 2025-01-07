@@ -1,5 +1,5 @@
 # Temper Keyboard with Trackpad
-
+WIP
 
 ## ZMK Building Firmware
 
@@ -7,3 +7,18 @@ to include the Trackpad  the zmk module cirque-input-module from petejohanson (h
 
 - to clone the module run `git clone https://github.com/petejohanson/cirque-input-module/tree/main` 
 - and make the directiry accessible in zmk docker container
+- also note that building this firmware with the trackpad requiers the pointers-move-and-scroll https://github.com/zmkfirmware/zmk/pull/2027
+
+### ZMK local build command
+adding the `--pristine` flag enforces a clean build regardless of the content in the specified directory.
+
+
+Right (central)
+```bash
+west build  -d build_t/right -b nice_nano_v2 -- -DSHIELD=ritemper_right -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-localvolume/zmk-modules/cirque-input-module;/workspaces/zmk-localvolume/zmk-config"
+```
+
+Left
+```bash
+west build --pristine  -d build_t/left -b nice_nano_v2 -- -DSHIELD=ritemper_left -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-localvolume/zmk-modules/cirque-input-module;/workspaces/zmk-localvolume/zmk-config"
+```
