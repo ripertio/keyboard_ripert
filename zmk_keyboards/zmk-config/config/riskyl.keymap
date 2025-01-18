@@ -6,6 +6,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+#include <dt-bindings/zmk/mouse.h>
+#include <input/processors.dtsi>
 
 #define DEFAULT 0
 #define NAV     1
@@ -22,9 +24,11 @@
 };
 &msc {
     acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <300>;      // 300
+    time-to-max-speed-ms = <50>;      // 300
     delay-ms = <0>;                   // 0
 };
+
+
 
 / {
     combos {
@@ -35,10 +39,20 @@
             key-positions = <21 22>;
             bindings = <&kp DEL>;
         };
-        bacsspace {
+        backsspace {
             timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp BACKSPACE>;
+        };
+        escape{
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp ESCAPE>;
+        };
+        enter{
+            timeout-ms= <50>;
+            key-positions = <22 23>;
+            bindings = <&kp ENTER>;
         };
     };
 };
@@ -59,9 +73,7 @@
             tapping-term-ms = <175>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
-
-        
+        };   
     };
 
     keymap {
@@ -116,4 +128,21 @@
             >;
         };
     };
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>;
+        input-processors = <&zip_temp_layer DEFAULT 1000>;
+
+        snipe {
+            layers = <NAV>;
+            input-processors = <&zip_xy_scaler 1 4>;
+        };
+
+        scroll {
+            layers = <NUM>;
+            input-processors = <&zip_xy_scaler 1 40>, <&zip_xy_to_scroll_mapper>;//, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        };
+    };
 };
+
