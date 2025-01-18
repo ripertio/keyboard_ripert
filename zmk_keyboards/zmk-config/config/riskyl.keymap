@@ -71,7 +71,7 @@
             display-name = "BONE2";
             bindings = <
 &kp J         &kp D        &kp U       &kp A        &kp X      &kp P         &kp H        &kp L          &kp M        &kp W
-&kp C    &hm LCTL T  &hm LALT I  &hs LGUI E      &kp O               &kp B           &hs RGUI J      &hm RALT R    &hm RCTL S  &kp G
+&kp C    &hm LCTL T  &hm LALT I  &hs LGUI E      &kp O               &kp B           &hs RGUI N      &hm RALT R    &hm RCTL S  &kp G
 &kp F           &kp V   &kp LBKT    &kp SQT         &kp SEMI            &kp Z           &kp Y           &kp MINUS     &kp Q       &kp K
                            &lt NUM TAB   &lt NAV SPACE  &kp LSHIFT   &kp RSHIFT   &lt SYM ENTER  &lt FUNC  ESCAPE
             >;
@@ -117,3 +117,18 @@
         };
     };
 };
+
+/ {
+	/* assign `input-listener` to all pointing devices */
+	/* &pd0 on central, &pd1 on peripheral */
+
+        trackball_central_listener {
+                compatible = "zmk,input-listener";
+                device = <&pd0>;
+	};
+
+        trackball_peripheral_listener {
+                compatible = "zmk,input-listener";
+                device = <&pd1>;
+	};
+}/
