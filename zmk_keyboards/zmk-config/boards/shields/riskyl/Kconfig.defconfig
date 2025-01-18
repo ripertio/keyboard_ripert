@@ -1,4 +1,4 @@
-if SHIELD_RISKYL_RIGHT
+if SHIELD_RISKYL_LEFT
 config ZMK_KEYBOARD_NAME
     default "Skyl"
 
