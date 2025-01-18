@@ -5,6 +5,8 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <input/processors.dtsi>
+
 
 / {
     chosen {
@@ -43,32 +45,4 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
     };
 
     // TODO: per-key RGB node(s)?
-};
-
-
-// From Pete: https://discord.com/channels/719497620560543766/845285481888743434/1206181117296644106
-
-&pro_micro_i2c {
-    status = "okay";
-    glidepoint: glidepoint@2a {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
-        status = "okay";
-        dr-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "1x";
-        sleep;
-        //no-taps;
-    };
-};
-
-/ {
-  glidepoint_listener {
-    compatible = "zmk,input-listener";
-    device = <&glidepoint>;
-    scale-multiplier = <2>;
-    xy-swap;
-    y-invert;
-    x-invert;
-  };
 };
