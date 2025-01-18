@@ -101,7 +101,7 @@
             bindings = <
 &trans             &trans     &trans &trans      &trans  &none &ext_power EP_ON  &bt BT_SEL 2        &out OUT_USB  &bootloader
 &trans             &trans     &trans &trans      &kp LS(HOME)    &none &ext_power EP_OFF  &bt BT_SEL 1         &out OUT_BLE  &sys_reset
-&trans             &trans     &trans &trans      &trans   &none &ext_power EP_TOG &bt BT_SEL 0      &bt BT_CLR &none
+&trans             &trans     &trans &trans      &trans   &none &ext_power EP_TOG &bt BT_SEL 0      &bt BT_CLR &studio_unlock
                              &trans        &trans         &trans        &trans           &trans     &trans
             >;
         };
