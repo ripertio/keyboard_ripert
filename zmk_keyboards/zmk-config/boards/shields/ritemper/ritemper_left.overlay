@@ -15,6 +15,7 @@
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         ;
 };
-&glidepoint_input_listener {
+
+&glidepoint_listener {
     status = "okay";
-};*/
+};

@@ -6,6 +6,7 @@
 
 #include "ritemper.dtsi"
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
     col-offset = <5>;
@@ -35,13 +36,8 @@
     };
 };
 
-/ {
-  glidepoint_listener {
-    compatible = "zmk,input-listener";
+// Overrides for the input-split child node
+&glidepoint_split {
     device = <&glidepoint>;
-    scale-multiplier = <2>;
-    xy-swap;
-    y-invert;
-    x-invert;
-  };
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
