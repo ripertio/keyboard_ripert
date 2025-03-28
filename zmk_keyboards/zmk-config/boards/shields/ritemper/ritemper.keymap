@@ -32,35 +32,28 @@
 &glidepoint_listener {
     scroller {
         layers = <NUM>;
-        input-processors = <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>;
     };
 };
 
-/ {
-    input_processors {
-        // add scroll scaler
-        zip_scroll_scaler: zip_scroll_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
-};
 
 / {
     combos {
         compatible = "zmk,combos";
 
-        delete {
+        letf_m {
             timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp DEL>;
+            key-positions = <11 12>;
+            bindings = <&mkp LCLK>;
+        };
+        rikht_m {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp BACKSPACE>;
         };
         bacsspace {
             timeout-ms = <50>;
-            key-positions = <27 28>;
+            key-positions = <9 19>;
             bindings = <&kp BACKSPACE>;
         };
         escape{
@@ -70,9 +63,9 @@
         };
         enter{
             timeout-ms = <50>;
-            key-positions = <22 23>;
+            key-positions = <2 3>;
             bindings = <&kp ENTER>;
-        };
+        };  
     };
 };
 
@@ -102,9 +95,9 @@
             display-name = "BONE2";
             bindings = <
 &kp J         &kp D        &kp U       &kp A        &kp X      &kp P         &kp H        &kp L          &kp M        &kp W
-&kp C    &hm LCTL T  &hm LALT I  &hs LGUI E      &kp O               &kp B           &hs RGUI N      &hm RALT R    &hm RCTL S  &kp G
-&kp F           &kp V   &kp LBKT    &kp SQT         &kp SEMI            &kp Z           &kp Y           &kp MINUS     &kp Q       &kp K
-                           &lt NUM TAB   &lt NAV SPACE  &kp LSHIFT   &kp RSHIFT   &lt SYM ENTER  &lt FUNC  ESCAPE
+&kp C    &kp T  &kp I  &kp E      &kp O               &kp B           &kp N      &kp R    &kp S  &kp G
+&hs LSHIFT F  &hm LCTL V   &hm LALT LBKT    &hm LGUI SQT         &kp SEMI            &kp Z           &hm RGUI Y           &hm RALT MINUS     &hm RCTL Q       &hs RSHIFT K
+                           &kp DEL &lt NUM TAB   &lt NAV SPACE        &lt SYM ENTER  &lt FUNC  ESCAPE &kp BACKSPACE
             >;
         };
 

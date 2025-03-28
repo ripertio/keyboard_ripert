@@ -12,4 +12,7 @@ if SHIELD_RITEMPER_LEFT || SHIELD_RITEMPER_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_SLEEP
+    default y
+
 endif
