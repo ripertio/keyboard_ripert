@@ -13,12 +13,12 @@ to include the Trackpad  the zmk module cirque-input-module from petejohanson (h
 adding the `--pristine` flag enforces a clean build regardless of the content in the specified directory.
 
 
-Right (central)
+Right
 ```bash
-west build  -d build_t/right -b nice_nano_v2 -- -DSHIELD=ritemper_right -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-localvolume/zmk-modules/cirque-input-module;/workspaces/zmk-localvolume/zmk-config"
+west build  -d build_t/right -b nice_nano_v2 -- -DSHIELD=ritemper_right -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/cirque-input-module;/workspaces/zmk-config"
 ```
 
-Left
+Left Central 
 ```bash
-west build --pristine  -d build_t/left -b nice_nano_v2 -- -DSHIELD=ritemper_left -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-localvolume/zmk-modules/cirque-input-module;/workspaces/zmk-localvolume/zmk-config"
+west build --pristine  -d build_t/left -b nice_nano_v2 -- -DSHIELD="ritemper_left nice_view_adapter nice_view" -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/cirque-input-module;/workspaces/zmk-config"
 ```

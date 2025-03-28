@@ -31,8 +31,8 @@
         dr-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH)>;
 
 // 1X = most sensitive, 4X = least sensitive
-        sensitivity = "4x";
-        //sleep;
+        sensitivity = "2x";
+        sleep;
         //no-taps;
     };
 };

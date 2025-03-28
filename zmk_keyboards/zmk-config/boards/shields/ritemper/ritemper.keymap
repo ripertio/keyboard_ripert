@@ -32,6 +32,7 @@
     scroller {
         layers = <NUM>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 16>;
     };
 };
 
@@ -44,6 +45,11 @@
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&mkp LCLK>;
+        };
+        rikht_m {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&mkp RCLK>;
         };
         rikht_m {
             timeout-ms = <50>;
@@ -89,6 +95,9 @@
             display-name = "BONE2";
             bindings = <
 &kp J         &kp D        &kp U       &kp A        &kp X      &kp P         &kp H        &kp L          &kp M        &kp W
+&kp C    &kp T  &kp I  &kp E      &kp O               &kp B           &kp N      &kp R    &kp S  &kp G
+&hs LSHIFT F  &hm LCTL V   &hm LALT LBKT    &hm LGUI SQT         &kp SEMI            &kp Z           &hm RGUI Y           &hm RALT MINUS     &hm RCTL Q       &hs RSHIFT K
+                           &kp DEL &lt NUM TAB   &lt NAV SPACE        &lt SYM ENTER  &lt FUNC  ESCAPE &kp BACKSPACE
 &kp C    &kp T  &kp I  &kp E      &kp O               &kp B           &kp N      &kp R    &kp S  &kp G
 &hs LSHIFT F  &hm LCTL V   &hm LALT LBKT    &hm LGUI SQT         &kp SEMI            &kp Z           &hm RGUI Y           &hm RALT MINUS     &hm RCTL Q       &hs RSHIFT K
                            &kp DEL &lt NUM TAB   &lt NAV SPACE        &lt SYM ENTER  &lt FUNC  ESCAPE &kp BACKSPACE
