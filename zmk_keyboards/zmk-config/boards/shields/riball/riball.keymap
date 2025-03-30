@@ -49,7 +49,7 @@
         };
         escape{
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <11 12>;
             bindings = <&kp ESCAPE>;
         };
         enter{
@@ -90,7 +90,7 @@
 &kp LSHIFT  &kp C           &hm LCTL T      &hm LALT I  &hs LGUI E  &kp O               &kp B           &hs RGUI N      &hm RALT R      &hm RCTL S  &kp G       &kp RSHIFT
             &kp F           &kp V           &kp LBKT    &kp SQT     &kp SEMI            &kp Z           &kp Y           &kp MINUS       &kp Q       &kp K
                             &mkp LCLK       &mkp RCLK                                                                                   &mkp RCLK                                           
-                                            &kp BACKSPACE  &lt NAV SPACE &lt NUM TAB       &lt SYM  ESCAPE &lt FUNC ENTER   
+                                            &kp BACKSPACE  &lt NAV SPACE &lt NUM TAB       &lt FUNC  ESCAPE &lt SYM ENTER   
                                                                                                             &mkp LCLK
 
             >;
@@ -101,7 +101,7 @@
                         &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
                         &none          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &none         &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_DOWN  &kp C_VOLUME_UP
         &kp LSHIFT      &mkp MB5       &mkp MB3       &mkp LCLK      &mkp RCLK      &mkp MB3       &none          &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT &kp C_MUTE            &kp RSHIFT
-                        &none          &kp LG(LS(N4)) &kp LG(X)      &kp LG(C)      &kp LG(V)      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOL_DN
+                        &kp LG(LS(N4)) &kp LG(X)      &kp LG(C)      &kp LG(V)      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOL_DN
                                        &trans         &trans                                                                                &trans         
                                        &trans         &trans         &trans         &trans         &trans
                                                                                                        &trans
@@ -136,7 +136,7 @@
         func_layer {
             display-name = "FUNC";
             bindings = <
-                        &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
+                        &bootloader          &sys_reset          &none          &none          &none          &none          &none          &none          &none          &none
                         &trans             &trans     &trans &trans      &trans  &none &ext_power EP_ON  &bt BT_SEL 2        &out OUT_USB  &bootloader
             &kp LSHIFT  &trans             &trans     &trans &trans      &kp LS(HOME)    &none &ext_power EP_OFF  &bt BT_SEL 1         &out OUT_BLE  &sys_reset
                         &trans             &trans     &trans &trans      &trans   &none &ext_power EP_TOG &bt BT_SEL 0      &bt BT_CLR &none
