@@ -86,9 +86,9 @@
             display-name = "BONE2";
             bindings = <
             &kp N1          &kp N2          &kp N3      &kp N4      &kp N5              &kp N6          &kp N7          &kp N8          &kp N9      &kp N0
-            &kp J           &kp D           &kp U       &kp A       &kp X               &kp P           &kp H           &kp L           &kp M       &kp W
-&kp LSHIFT  &kp C           &hm LCTL T      &hm LALT I  &hs LGUI E  &kp O               &kp B           &hs RGUI N      &hm RALT R      &hm RCTL S  &kp G       &kp RSHIFT
-            &kp F           &kp V           &kp LBKT    &kp SQT     &kp SEMI            &kp Z           &kp Y           &kp MINUS       &kp Q       &kp K
+            &kp J         &kp D        &kp U       &kp A        &kp X      &kp P         &kp H        &kp L          &kp M        &kp W
+ &kp LSHIFT &kp C    &kp T  &kp I  &kp E      &kp O               &kp B           &kp N      &kp R    &kp S  &kp G &kp LSHIF
+            &hs LSHIFT F  &hm LCTL V   &hm LALT LBKT    &hm LGUI SQT         &kp SEMI            &kp Z           &hm RGUI Y           &hm RALT MINUS     &hm RCTL Q       &hs RSHIFT K
                             &mkp LCLK       &mkp RCLK                                                                                   &mkp RCLK                                           
                                             &kp BACKSPACE  &lt NAV SPACE &lt NUM TAB       &lt FUNC  ESCAPE &lt SYM ENTER   
                                                                                                             &mkp LCLK
@@ -138,7 +138,7 @@
             bindings = <
                         &bootloader          &sys_reset          &none          &none          &none          &none          &none          &none          &none          &none
                         &trans             &trans     &trans &trans      &trans  &none &ext_power EP_ON  &bt BT_SEL 2        &out OUT_USB  &bootloader
-            &kp LSHIFT  &trans             &trans     &trans &trans      &kp LS(HOME)    &none &ext_power EP_OFF  &bt BT_SEL 1         &out OUT_BLE  &sys_reset
+            &kp LSHIFT  &trans             &trans     &trans &kp A      &kp LS(HOME)    &none &ext_power EP_OFF  &bt BT_SEL 1         &out OUT_BLE  &sys_reset
                         &trans             &trans     &trans &trans      &trans   &none &ext_power EP_TOG &bt BT_SEL 0      &bt BT_CLR &none
                                 &trans    &trans                                                                        &trans              
                                           &trans                 &trans      &trans      &trans     &trans
