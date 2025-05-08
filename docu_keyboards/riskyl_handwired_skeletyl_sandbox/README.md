@@ -15,3 +15,5 @@ Left
 ```bash
 west build --pristine -d build/left -b nice_nano_v2 -- -DSHIELD=riskyl_left  -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-localvolume/zmk-modules/cirque-input-module;/workspaces/zmk-localvolume/zmk-config"
 ```
+### Needed Module:
+get with `git clone https://github.com/badjeff/zmk-pmw3610-driver`

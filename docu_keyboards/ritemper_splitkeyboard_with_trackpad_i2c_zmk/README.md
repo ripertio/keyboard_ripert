@@ -22,3 +22,5 @@ Left Central
 ```bash
 west build --pristine  -d build_t/left -b nice_nano_v2 -- -DSHIELD="ritemper_left nice_view_adapter nice_view" -DZMK_CONFIG=/workspaces/zmk-localvolume/zmk-config/config  -DZMK_EXTRA_MODULES="/workspaces/zmk-modules/cirque-input-module;/workspaces/zmk-config"
 ```
+### Needed Module:
+get with `git clone https://github.com/petejohanson/cirque-input-module`
