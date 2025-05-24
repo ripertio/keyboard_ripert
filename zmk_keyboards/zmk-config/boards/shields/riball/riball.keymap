@@ -85,13 +85,13 @@
         default_layer {
             display-name = "BONE2";
             bindings = <
-            &kp N1          &kp N2          &kp N3      &kp N4      &kp N5              &kp N6          &kp N7          &kp N8          &kp N9      &kp N0
-            &kp J         &kp D        &kp U       &kp A        &kp X      &kp P         &kp H        &kp L          &kp M        &kp W
- &kp LSHIFT &kp C    &kp T  &kp I  &kp E      &kp O               &kp B           &kp N      &kp R    &kp S  &kp G &kp LSHIF
-            &hs LSHIFT F  &hm LCTL V   &hm LALT LBKT    &hm LGUI SQT         &kp SEMI            &kp Z           &hm RGUI Y           &hm RALT MINUS     &hm RCTL Q       &hs RSHIFT K
-                            &mkp LCLK       &mkp RCLK                                                                                   &mkp RCLK                                           
-                                            &kp BACKSPACE  &lt NAV SPACE &lt NUM TAB       &lt FUNC  ESCAPE &lt SYM ENTER   
-                                                                                                            &mkp LCLK
+            &kp N1          &kp N2       &kp N3             &kp N4          &kp N5              &kp N6          &kp N7          &kp N8          &kp N9      &kp N0
+            &kp J           &kp D        &kp U              &kp A           &kp X               &kp P           &kp H           &kp L           &kp M       &kp W
+ &kp LSHIFT &kp C           &kp T        &kp I              &kp E           &kp O               &kp B           &kp N           &kp R           &kp S       &kp G           &kp RSHIFT
+            &kp F           &hm LCTL V   &hm LALT LBKT      &hm LGUI SQT    &kp SEMI            &kp Z           &hm RGUI Y      &hm RALT MINUS  &hm RCTL Q  &hs RSHIFT K
+                            &mkp LCLK    &mkp RCLK                                                                                              &mkp RCLK                                           
+                                         &kp BACKSPACE      &lt NAV SPACE   &lt NUM TAB         &lt FUNC ESCAPE &lt SYM ENTER   
+                                                                                                                &mkp LCLK
 
             >;
         };
