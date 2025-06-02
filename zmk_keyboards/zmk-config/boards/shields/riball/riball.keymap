@@ -85,12 +85,12 @@
         default_layer {
             display-name = "BONE2";
             bindings = <
-            &kp N1          &kp N2       &kp N3             &kp N4          &kp N5              &kp N6          &kp N7          &kp N8          &kp N9      &kp N0
-            &kp J           &kp D        &kp U              &kp A           &kp X               &kp P           &kp H           &kp L           &kp M       &kp W
- &kp LSHIFT &kp C           &kp T        &kp I              &kp E           &kp O               &kp B           &kp N           &kp R           &kp S       &kp G           &kp RSHIFT
-            &kp F           &hm LCTL V   &hm LALT LBKT      &hm LGUI SQT    &kp SEMI            &kp Z           &hm RGUI Y      &hm RALT MINUS  &hm RCTL Q  &hs RSHIFT K
-                            &mkp LCLK    &mkp RCLK                                                                                              &mkp RCLK                                           
-                                         &kp BACKSPACE      &lt NAV SPACE   &lt NUM TAB         &lt FUNC ESCAPE &lt SYM ENTER   
+            &kp N1          &kp N2       &kp N3         &kp N4          &kp N5              &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
+            &kp J           &kp D        &kp U          &kp A           &kp X               &kp P           &kp H           &kp L           &kp M           &kp W
+ &kp LSHIFT &kp C           &kp T        &kp I          &kp E           &kp O               &kp B           &kp N           &kp R           &kp S           &kp G           &kp RSHIFT
+            &kp F           &hm LCTL V   &hm LALT LBKT  &hm LGUI SQT    &kp SEMI            &kp Z           &hm RGUI Y      &hm RALT MINUS  &hm RCTL Q      &kp K
+                            &mkp LCLK    &mkp RCLK                                                                                          &mkp RCLK                                           
+                                         &kp BACKSPACE  &lt NAV SPACE   &lt NUM TAB         &lt FUNC ESCAPE &lt SYM ENTER   
                                                                                                                 &mkp LCLK
 
             >;
@@ -98,37 +98,36 @@
         nav_layer {
     display-name = "NAV";
     bindings = <
-                        &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
-                        &none          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT &none         &kp PAGE_UP    &kp UP_ARROW   &kp PAGE_DOWN  &kp C_VOLUME_UP
-        &kp LSHIFT      &mkp MB5       &mkp MB3       &mkp LCLK      &mkp RCLK      &mkp MB3       &none          &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT &kp C_MUTE            &kp RSHIFT
-                        &kp LG(LS(N4)) &kp LG(X)      &kp LG(C)      &kp LG(V)      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOL_DN
-                                       &trans         &trans                                                                                &trans         
-                                       &trans         &trans         &trans         &trans         &trans
+            &none          &none          &none          &none          &none               &none           &none           &none           &none           &none
+            &none          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP   &msc SCRL_RIGHT     &none           &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN   &kp C_VOLUME_UP
+&kp LSHIFT  &mkp MB5       &mkp MB3       &mkp LCLK      &mkp RCLK      &mkp MB3            &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT       &kp C_MUTE      &kp RSHIFT
+            &kp LG(LS(N4)) &kp LG(X)      &kp LG(C)      &kp LG(V)      &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT  &kp C_VOL_DN
+                           &trans         &trans                                                                                            &trans         
+                                          &trans         &trans         &trans              &trans          &trans
                                                                                                        &trans
     >;
 };
         num_layer {
             display-name = "NUM";
             bindings = <
-            &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
-            &trans             &trans     &trans                 &trans      &trans     &trans             &trans     &trans                 &trans      &trans 
-            &trans             &trans     &trans                 &trans      &trans      &kp LS(N0)  &kp N7  &kp N8  &kp N9  &trans
-&kp LSHIFT   &kp RIGHT_BRACKET  &kp SLASH  &kp LS(RIGHT_BRACKET)  &kp LS(N7)  &kp LS(N0)  &kp N0      &kp N4  &kp N5  &kp N6  &trans &kp RSHIFT
-            &trans             &trans     &trans                 &trans      &trans  &kp LA(N0)           &kp N1  &kp N2  &kp N3  &trans
-                                &trans    &trans                                                                        &trans              
-                                          &trans                 &trans      &trans      &trans     &trans
+            &trans         &trans       &trans           &trans         &trans              &trans          &trans          &trans          &trans      &trans 
+            &trans         &trans       &trans           &trans         &trans              &kp LS(N0)      &kp N7          &kp N8          &kp N9      &trans
+&kp LSHIFT  &kp RIGHT_BRACKET &kp SLASH &kp LS(RIGHT_BRACKET) &kp LS(N7) &kp LS(N0)         &kp N0          &kp N4          &kp N5          &kp N6      &trans          &kp RSHIFT
+            &trans         &trans       &trans           &trans         &trans              &kp LA(N0)      &kp N1          &kp N2          &kp N3      &trans
+                           &trans       &trans                                                                                              &trans              
+                                        &trans           &trans         &trans              &trans          &trans
                                                                                                     &trans
             >;
         };
         sym_layer {
             display-name = "SYS";
             bindings = <
-                        &none          &none          &none          &none          &none          &none          &none          &none          &none          &none
-                        &kp LA(LS(N7))  &kp LA(NUMBER_4)  &kp LA(N)         &kp LS(N5)  &kp LS(NUMBER_6)  &kp LS(EQUAL)        &kp LA(LS(N6))     &kp LS(COMMA)     &kp LS(DOT)    &kp LS(N4)
-            &kp LSHIFT   &kp LS(N7)   &kp LS(N8)        &kp LS(N9)        &kp LA(N5)  &kp LA(NUMBER_6)  &kp LS(NUMBER_2)     &kp SLASH      &kp COMMA         &kp DOT        &kp NON_US_HASH &kp RSHIFT
-                        &kp LA(N7)   &kp GRAVE         &kp LS(GRAVE)  &kp LA(N8)  &kp LA(N9)        &kp LS(NON_US_HASH)  &kp LS(SLASH)  &kp LS(NUMBER_1)  &kp LS(MINUS)  &kp LA(E)
-                                     &trans    &trans                                                                        &trans              
-                                          &trans                 &trans      &trans      &trans     &trans
+            &none           &none       &none           &none           &none               &none           &none           &none           &none          &none
+            &kp LA(LS(N7))  &kp LA(NUMBER_4)  &kp LA(N) &kp LS(N5)      &kp LS(NUMBER_6)    &kp LS(EQUAL)   &kp LA(LS(N6))  &kp LS(COMMA)   &kp LS(DOT)    &kp LS(N4)
+&kp LSHIFT  &kp LS(N7)      &kp LS(N8)  &kp LS(N9)      &kp LA(N5)      &kp LA(NUMBER_6)    &kp LS(NUMBER_2) &kp SLASH      &kp COMMA       &kp DOT        &kp NON_US_HASH &kp RSHIFT
+            &kp LA(N7)      &kp GRAVE   &kp LS(GRAVE)   &kp LA(N8)      &kp LA(N9)          &kp LS(NON_US_HASH) &kp LS(SLASH) &kp LS(NUMBER_1) &kp LS(MINUS) &kp LA(E)
+                            &trans      &trans                                                                                              &trans              
+                                        &trans          &trans          &trans              &trans          &trans
                                                                                                     &trans
             >;
         };
@@ -136,12 +135,12 @@
         func_layer {
             display-name = "FUNC";
             bindings = <
-                        &bootloader          &sys_reset          &none          &none          &none          &none          &none          &none          &none          &none
-                        &trans             &trans     &trans &trans      &trans  &none &ext_power EP_ON  &bt BT_SEL 2        &out OUT_USB  &bootloader
-            &kp LSHIFT  &trans             &trans     &trans &kp A      &kp LS(HOME)    &none &ext_power EP_OFF  &bt BT_SEL 1         &out OUT_BLE  &sys_reset
-                        &trans             &trans     &trans &trans      &trans   &none &ext_power EP_TOG &bt BT_SEL 0      &bt BT_CLR &none
-                                &trans    &trans                                                                        &trans              
-                                          &trans                 &trans      &trans      &trans     &trans
+            &bootloader     &sys_reset  &none           &none           &none               &none           &none               &none          &none        &none
+            &trans          &trans      &trans          &trans          &trans              &none           &ext_power EP_ON    &bt BT_SEL 2   &out OUT_USB &bootloader
+&kp LSHIFT  &trans          &trans      &trans          &kp A           &kp LS(HOME)        &none           &ext_power EP_OFF   &bt BT_SEL 1   &out OUT_BLE &sys_reset      &kp RSHIFT
+            &trans          &trans      &trans          &trans          &trans              &none           &ext_power EP_TOG   &bt BT_SEL 0   &bt BT_CLR   &none
+                            &trans      &trans                                                                                                 &trans              
+                                        &trans          &trans          &trans              &trans          &trans
                                                                                                     &trans
             >;
         };
