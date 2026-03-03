@@ -19,7 +19,6 @@
 #define FUNC    4
 
 
-
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 &mmv {
     acceleration-exponent = <1>;      // 1
@@ -89,7 +88,7 @@
             &kp J           &kp D        &kp U          &kp A           &kp X               &kp P           &kp H           &kp L           &kp M           &kp W
  &kp LSHIFT &kp C           &kp T        &kp I          &kp E           &kp O               &kp B           &kp N           &kp R           &kp S           &kp G           &kp RSHIFT
             &kp F           &hm LCTL V   &hm LALT LBKT  &hm LGUI SQT    &kp SEMI            &kp Z           &hm RGUI Y      &hm RALT MINUS  &hm RCTL Q      &kp K
-                            &mkp LCLK    &mkp RCLK                                                                                          &mkp RCLK                                           
+                            &mkp LCLK    &mkp RCLK                                                                                          &kp BACKSPACE                                           
                                          &kp BACKSPACE  &lt NAV SPACE   &lt NUM TAB         &lt FUNC ESCAPE &lt SYM ENTER   
                                                                                                                 &mkp LCLK
 
